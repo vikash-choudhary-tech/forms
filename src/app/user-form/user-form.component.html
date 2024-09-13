@@ -1,1 +1,8 @@
-<p>user-form works!</p>
+
+<form [formGroup]="userForm" class="form-container">
+    <input formControlName="username" class="username" />
+    <input formControlName="password" class="password" />
+    <input formControlName="address" />
+</form>
+
+{{userForm.value | json}}
